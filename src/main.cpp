@@ -228,6 +228,7 @@ int main(int argc, char const *argv[])
         }
     }else{
         goto hmm;
+        cout<<"Inputan Anda salah"<<endl;
     }
   
 	return 0;  
