@@ -172,13 +172,14 @@ int main(int argc, char const *argv[])
     time_t now = time(0);
     char* dt = ctime(&now);
     cout<<"=================\n";
-    cout<<"Nama Kasir : "<<nama<<endl;
-    cout<<"Tanggal : "<<dt;
+    
 
  
     for (int i = 0; i < x; i++){
         cout<<"-----------------------"<<endl;
-        cout<<"Nama : "<<nama_paket[i]<<endl;
+        cout<<"Nama Kasir : "<<nama<<endl;
+        cout<<"Tanggal : "<<dt;
+        cout<<"Nama Makanan / Minuman  : "<<nama_paket[i]<<endl;
         cout<<"Jenis : "<<jenis_menu[i]<<endl;
         cout<<"Harga : "<<"Rp"<<harga[i]<<endl;
         cout<<"jumlah Barang : "<<jumlah[i]<<endl;
@@ -195,7 +196,6 @@ int main(int argc, char const *argv[])
 
     cout<<"==================================\n";
     cout<<"Total : "<<"Rp"<<total<<endl;
-    cout<<"---------------------------\n";
     cout<<"Anda Hemat : "<<"Rp"<<diskon<<endl;
     cout<<"==================================\n";
     cout<<"1. Credit\n";
