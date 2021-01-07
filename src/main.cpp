@@ -2,7 +2,7 @@
 #include <string>
 #include <ctime>
 
-using namespace std;
+
 int main(int argc, char const *argv[])
 {
     int bayar, tipe, jumlah[100], paket, trip, x = 0;
