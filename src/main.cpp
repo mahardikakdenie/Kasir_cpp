@@ -2,7 +2,7 @@
 #include <string>
 #include <ctime>
 
-
+using namespace std;
 int main(int argc, char const *argv[])
 {
     int bayar, tipe, jumlah[100], paket, trip, x = 0;
@@ -14,24 +14,24 @@ int main(int argc, char const *argv[])
     {
     Menu:
         system("cls");
-        std::cout << "==== Toko KhoungCUAN ====" << endl;
-        std::cout << "1.Makanan " << endl;
-        std::cout << "2.Minuman " << endl;
+        std::cout << "==== Toko KhoungCUAN ====" << std::endl;
+        std::cout << "1.Makanan " << std::endl;
+        std::cout << "2.Minuman " << std::endl;
         std::cout << "Pilih [ 1 / 2 ] : ";
         std::cin >> tipe;
         if (tipe == 1)
         {
         Makanan:
             system("cls");
-            std::cout << "\n\tMakananan" << endl;
-            std::cout << "1.Oreo" << endl;
-            std::cout << "2.Odading" << endl;
-            std::cout << "3.Snack" << endl;
+            std::cout << "\n\tMakananan" << std::endl;
+            std::cout << "1.Oreo" << std::endl;
+            std::cout << "2.Odading" << std::endl;
+            std::cout << "3.Snack" << std::endl;
             std::cout << "pilih [ 1 / 2 / 3 ] : ";
             std::cin >> tipe;
             if (tipe == 1)
             {
-                std::cout << "\nOreo" << endl;
+                std::cout << "\nOreo" << std::endl;
                 jenis_menu[x] = "Makanan";
                 nama_paket[x] = "Oreo";
                 harga[x] = 5000;
@@ -55,7 +55,7 @@ int main(int argc, char const *argv[])
             }
             else if (tipe == 2)
             {
-                std::cout << "\nOdading" << endl;
+                std::cout << "\nOdading" << std::endl;
                 jenis_menu[x] = "Makanan";
                 nama_paket[x] = "Odading";
                 harga[x] = 2000;
@@ -80,7 +80,7 @@ int main(int argc, char const *argv[])
             }
             else if (tipe == 3)
             {
-                std::cout << "\nSnack" << endl;
+                std::cout << "\nSnack" << std::endl;
                 jenis_menu[x] = "Makanan";
                 nama_paket[x] = "Snack";
                 harga[x] = 1000;
@@ -112,15 +112,15 @@ int main(int argc, char const *argv[])
         {
         Minuman:
             system("cls");
-            std::cout << "\n\tMinuman" << endl;
-            std::cout << "1.Juice" << endl;
-            std::cout << "2.Es Cendol" << endl;
-            std::cout << "3.Es Dawet" << endl;
+            std::cout << "\n\tMinuman" << std::endl;
+            std::cout << "1.Juice" << std::endl;
+            std::cout << "2.Es Cendol" << std::endl;
+            std::cout << "3.Es Dawet" << std::endl;
             std::cout << "Pilih [ 1 / 2 / 3 ]";
             std::cin >> tipe;
             if (tipe == 1)
             {
-                std::cout << "\nJuice" << endl;
+                std::cout << "\nJuice" << std::endl;
                 jenis_menu[x] = "Minuman";
                 nama_paket[x] = "juice";
                 harga[x] = 10000;
@@ -145,7 +145,7 @@ int main(int argc, char const *argv[])
             }
             else if (tipe == 2)
             {
-                std::cout << "\nEs Cendol" << endl;
+                std::cout << "\nEs Cendol" << std::endl;
                 jenis_menu[x] = "Minuman";
                 nama_paket[x] = "Es Cendol";
                 harga[x] = 5000;
@@ -170,7 +170,7 @@ int main(int argc, char const *argv[])
             }
             else if (tipe == 3)
             {
-                std::cout << "\nEs Dawet" << endl;
+                std::cout << "\nEs Dawet" << std::endl;
                 jenis_menu[x] = "Minuman";
                 nama_paket[x] = "Es Dawet";
                 harga[x] = 5000;
@@ -213,24 +213,24 @@ int main(int argc, char const *argv[])
     char *dt = ctime(&now);
 
     system("cls");
-    std::cout << "Nama Kasir : " << nama << endl;
+    std::cout << "Nama Kasir : " << nama << std::endl;
     std::cout << "Tanggal : " << dt;
 
     std::cout << "=================\n";
     for (int i = 0; i < x; i++)
     {
-        std::cout << "-----------------------" << endl;
-        std::cout << "Nama Makanan / Minuman  : " << nama_paket[i] << endl;
-        std::cout << "Jenis : " << jenis_menu[i] << endl;
+        std::cout << "-----------------------" << std::endl;
+        std::cout << "Nama Makanan / Minuman  : " << nama_paket[i] << std::endl;
+        std::cout << "Jenis : " << jenis_menu[i] << std::endl;
         std::cout << "Harga : "
-                  << "Rp" << harga[i] << endl;
-        std::cout << "jumlah Barang : " << jumlah[i] << endl;
-        std::cout << "Bonus : " << bonus[i] << endl;
-        std::cout << "Diskon : " << diskon_jumlah[i] << "%" << endl;
+                  << "Rp" << harga[i] << std::endl;
+        std::cout << "jumlah Barang : " << jumlah[i] << std::endl;
+        std::cout << "Bonus : " << bonus[i] << std::endl;
+        std::cout << "Diskon : " << diskon_jumlah[i] << "%" << std::endl;
         std::cout << "Harga Diskon : "
-                  << "Rp" << total_diskon[i] << endl;
+                  << "Rp" << total_diskon[i] << std::endl;
         std::cout << "Total Sementara : "
-                  << "Rp" << tot_sementara[i] << endl;
+                  << "Rp" << tot_sementara[i] << std::endl;
         std::cout << "==================================\n";
         diskon += total_diskon[i];
         total += subtotal[i] - total_diskon[i];
@@ -239,9 +239,9 @@ int main(int argc, char const *argv[])
 
     std::cout << "==================================\n";
     std::cout << "Total : "
-              << "Rp" << total << endl;
+              << "Rp" << total << std::endl;
     std::cout << "Anda Hemat : "
-              << "Rp" << diskon << endl;
+              << "Rp" << diskon << std::endl;
     std::cout << "==================================\n";
     std::cout << "1. Credit\n";
     std::cout << "2. Cash\n";
@@ -251,23 +251,23 @@ hmm:
     std::cin >> tipe;
     if (tipe == 1)
     {
-        std::cout << "Credit" << endl;
+        std::cout << "Credit" << std::endl;
     Bayar:
         std::cout << "Masukan Bayar : ";
         std::cin >> bayar;
         if (bayar - total == 0)
         {
-            std::cout << "Sukses Selamat Datang Kembaliii" << endl;
+            std::cout << "Sukses Selamat Datang Kembaliii" << std::endl;
         }
         else
         {
-            std::cout << "Masukan Yang Benar " << endl;
+            std::cout << "Masukan Yang Benar " << std::endl;
             goto Bayar;
         }
     }
     else if (tipe == 2)
     {
-        std::cout << "Cash" << endl;
+        std::cout << "Cash" << std::endl;
     Byr:
         std::cout << "Masukan Bayar : ";
         std::cin >> bayar;
@@ -275,19 +275,19 @@ hmm:
         {
             Kembalian = bayar - total;
             std::cout << "Kembalian : "
-                      << "Rp" << Kembalian << endl;
-            std::cout << "Selamat Datang Kembaliiiiii" << endl;
+                      << "Rp" << Kembalian << std::endl;
+            std::cout << "Selamat Datang Kembaliiiiii" << std::endl;
         }
         else
         {
-            std::cout << "Masukan Yang Benar" << endl;
+            std::cout << "Masukan Yang Benar" << std::endl;
             goto Byr;
         }
     }
     else
     {
         goto hmm;
-        std::cout << "Inputan Anda salah" << endl;
+        std::cout << "Inputan Anda salah" << std::endl;
     }
 
     return 0;
